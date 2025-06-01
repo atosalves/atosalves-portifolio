@@ -14,9 +14,14 @@ function Projects() {
     const json = Route.useLoaderData();
 
     return (
-        <div className="flex flex-col divide-y divide-zinc-700">
+        <div className="flex flex-col divide-y divide-secundary">
             {json.map(({ id, name, description, html_url, topics }) => (
-                <a href={html_url} key={id} target="_blank" className="hover:bg-zinc-700 cursor-pointer space-y-2 p-2">
+                <a
+                    href={html_url}
+                    key={id}
+                    target="_blank"
+                    className="hover:bg-secundary divide-secundary cursor-pointer space-y-2 p-2"
+                >
                     <Section title={name}>{description ?? "Sem descrição"}</Section>
                     <div className="flex space-x-2">
                         {topics.length === 0 ? (
