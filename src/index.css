@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto&display=swap");
 @import "tailwindcss";
 
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #3f3f46;
-    border-radius: calc(infinity * 1px);
+    background-color: var(--color-secundary);
+    border-radius: 9999px;
+}
+
+@theme {
+    --font-primary: "Roboto", sans-serif;
+    --font-secundary: "Montserrat", sans-serif;
+
+    --color-accent: var(--color-orange-400);
+    --color-primary: var(--color-zinc-800);
+    --color-secundary: var(--color-zinc-900);
+    --color-background: var(--color-black);
+    --color-foreground: var(--color-white);
+    --color-destructive: var(--color-red-500);
+}
+
+body {
+    font-weight: 900;
 }
