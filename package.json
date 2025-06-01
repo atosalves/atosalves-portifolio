@@ -1,21 +1,17 @@
 {
     "name": "atosalves-portifolio",
-    "homepage": "https://atosalves.github.io/atosalves-portifolio/",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
-        "preview": "vite preview",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "preview": "vite preview"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.1.8",
         "@tanstack/react-router": "^1.120.13",
         "@tanstack/react-router-devtools": "^1.120.13",
-        "gh-pages": "^6.3.0",
         "lucide-react": "^0.511.0",
         "react": "^19.1.0",
         "react-dom": "^19.1.0",
