@@ -1,0 +1,1 @@
+import{j as r}from"./index-COKM4Mng.js";function s({message:e}){return r.jsx("span",{className:"flex justify-center w-full font-bold text-red-500",children:e})}const t=({error:e})=>r.jsx(s,{message:e.message});export{t as errorComponent};
