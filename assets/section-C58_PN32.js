@@ -1,0 +1,1 @@
+import{j as s}from"./index-BCeHujKO.js";function o({title:t,children:e}){return s.jsxs("section",{children:[s.jsx("h2",{className:"text-lg font-bold",children:t}),s.jsx("span",{className:"font-light text-sm",children:e})]})}export{o as S};
