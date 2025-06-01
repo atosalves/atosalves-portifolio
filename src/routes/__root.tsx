@@ -4,10 +4,12 @@ import { Loading } from "../components/loading";
 
 import { Github, Linkedin, Mail } from "lucide-react";
 import { FooterItem } from "../components/footer-item";
+import { NotFound } from "../components/not-found";
 
 export const Route = createRootRoute({
     component: Root,
-    pendingComponent: () => <Loading></Loading>,
+    pendingComponent: Loading,
+    notFoundComponent: NotFound,
 });
 
 function Root() {
