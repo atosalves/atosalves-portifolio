@@ -7,7 +7,10 @@ interface MenuLinkProps {
 
 export function MenuLink({ path, label }: MenuLinkProps) {
     return (
-        <Link to={path} className="[&.active]:border-b-2 [&.active]:border-b-orange-400 [&.active]:text-orange-400">
+        <Link
+            to={path}
+            className="w-full text-center [&.active]:border-b-2 [&.active]:border-b-accent [&.active]:text-accent"
+        >
             {label}
         </Link>
     );
