@@ -3,5 +3,5 @@ interface ErrorMessageProps {
 }
 
 export function ErrorMessage({ message }: ErrorMessageProps) {
-    return <span className="flex justify-center w-full font-bold text-red-500">{message}</span>;
+    return <span className="flex justify-center w-full font-bold text-destructive">{message}</span>;
 }
